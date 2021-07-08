@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/node_modules/materialize-css/dist/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <h3 class="header">Sign up</h3>
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="row">
+                <form class="col s12" method="GET" action="./formSubmit.html">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input name="name" type="text" class="validate" />
+                      <label for="icon_prefix">First Name</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mail</i>
+                      <input name="email" type="email" class="validate" />
+                      <label for="icon_telephone">E-mail</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">phone</i>
+                      <input name="phone" type="tel" class="validate" />
+                      <label for="icon_telephone">Telephone</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">lock</i>
+                      <input name="password" type="password" class="validate" />
+                      <label for="">Password</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <button
+                      class="btn waves-effect waves-light center-align"
+                      type="submit"
+                      name="action"
+                    >
+                      Submit
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="/node_modules/materialize-css/dist/js/materialize.min.js"
+    ></script>
+  </body>
+</html>
+
+<!-- <form method="GET" onsubmit="myFunction()" action="./formSubmit.html">
+  <div class="title">
+    <i class="fas fa-pencil-alt"></i>
+    <h2>Register here</h2>
+  </div>
+  <div class="info">
+    <input class="fname" type="text" name="name" placeholder="Full name" />
+    <input type="text" name="email" placeholder="Email" />
+    <input type="text" name="phone" placeholder="Phone number" />
+    <input type="password" name="password" placeholder="Password" />
+    <select>
+      <option value="course-type" selected>Course type*</option>
+      <option value="short-courses">Short courses</option>
+      <option value="featured-courses">Featured courses</option>
+      <option value="undergraduate">Undergraduate</option>
+      <option value="diploma">Diploma</option>
+      <option value="certificate">Certificate</option>
+      <option value="masters-degree">Masters degree</option>
+      <option value="postgraduate">Postgraduate</option>
+    </select>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" name="checkbox" /><span
+      >I agree to the
+      <a href="https://www.w3docs.com/privacy-policy"
+        >Privacy Poalicy for W3Docs.</a
+      ></span
+    >
+  </div>
+  <button type="submit" href="/">Submit</button>
+</form> -->

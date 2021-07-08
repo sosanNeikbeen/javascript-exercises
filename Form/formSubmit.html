@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/node_modules/materialize-css/dist/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <title>Form submission</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <h4 class="header">your data is here</h4>
+        <!-- <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <ul>
+                <li id="name"></li>
+                <li id="email"></li>
+                <li id="phone"></li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">account_circle</i>
+              Full name
+              <span id="name" class="badge"></span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">mail</i>
+              Email
+              <span id="email" class="badge"></span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">phone</i>
+              Phone
+              <span id="phone" class="badge"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      let params = new URL(document.location).searchParams;
+      let name = params.get("name");
+      let email = params.get("email");
+      let phone = params.get("phone");
+      document.getElementById("name").innerHTML = name;
+      document.getElementById("email").innerHTML = email;
+      document.getElementById("phone").innerHTML = phone;
+    </script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-var arr = [
+let arr = [
   3,
   6,
   67,
@@ -25,7 +25,7 @@ var arr = [
 
 const findDuplicate = (arr) => {
   let counts = {};
-  for (i = 0; i <= arr.length; i++) {
+  for (let i = 0; i <= arr.length; i++) {
     if (counts[arr[i]]) {
       counts[arr[i]] += 1;
     } else counts[arr[i]] = 1;
